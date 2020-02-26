@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Main_Events"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:padding="40dp"
+        android:text="Main Events"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#404BA2"
+            android:text="Profile"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/Events"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#404BA2"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:text="Events" />
+
+        <Button
+            android:id="@+id/Map"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#404BA2"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:text="Map" />
+        <Button
+            android:id="@+id/My_Events"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#404BA2"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:text="My Events" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
