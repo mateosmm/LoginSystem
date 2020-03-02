@@ -2,6 +2,7 @@ package com.example.loginsystem;
 
 import android.app.Activity;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,8 +48,8 @@ public class RegisterActivity extends Activity {
 
                     databaseHelper.insertUser(contentValues);
                     Toast.makeText(RegisterActivity.this, "User registered!", Toast.LENGTH_SHORT).show();
-
-
+                    Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(RegisterActivity.this, "Please Enter all Information.", Toast.LENGTH_SHORT).show();
