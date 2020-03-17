@@ -35,9 +35,9 @@ public class LoginActivity extends Activity {
 
                 if (databaseHelper.isLoginValid(usernameValue, passwordValue)) {
 
+                    Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
-                    Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
 
 
                 } else {

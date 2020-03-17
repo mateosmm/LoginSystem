@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LoginSystem</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_settings">my_settings</string>
+    <string name="action_search">search</string>
+    <string name="add_event_button">event button</string>
 </resources>

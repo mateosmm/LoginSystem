@@ -17,7 +17,7 @@ public class HomeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_home);
         Profile = findViewById(R.id.Profile);
         Events = findViewById(R.id.Events);
         Map = findViewById(R.id.Map);
