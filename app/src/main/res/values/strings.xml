@@ -1,7 +1,21 @@
 <resources>
-    <string name="app_name">LoginSystem</string>
+    <string name="app_name">LocalEvents</string>
     <string name="title_activity_maps">Map</string>
     <string name="action_settings">my_settings</string>
     <string name="action_search">search</string>
     <string name="add_event_button">event button</string>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 </resources>

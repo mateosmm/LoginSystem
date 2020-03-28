@@ -1,12 +1,15 @@
 package com.example.loginsystem;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 
 public class HomeActivity extends Activity {
@@ -23,6 +26,11 @@ public class HomeActivity extends Activity {
         Map = findViewById(R.id.Map);
         My_Events = findViewById(R.id.My_Events);
 
+        if (ContextCompat.checkSelfPermission( this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.ACCESS_COARSE_LOCATION}, 123);
+        }
         Profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
