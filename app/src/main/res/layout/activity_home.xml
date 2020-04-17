@@ -27,26 +27,6 @@
 
 
         <Button
-            android:id="@+id/Profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#404BA2"
-            android:text="Profile"
-            android:textColor="#fff"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/Events"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="#404BA2"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            android:text="Events" />
-
-        <Button
             android:id="@+id/Map"
             android:layout_width="match_parent"
             android:layout_weight="1"
@@ -55,15 +35,6 @@
             android:textColor="#fff"
             android:textSize="30sp"
             android:text="Map" />
-        <Button
-            android:id="@+id/My_Events"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="#404BA2"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            android:text="My Events" />
 
 
     </LinearLayout>

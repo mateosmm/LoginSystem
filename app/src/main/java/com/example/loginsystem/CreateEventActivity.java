@@ -23,7 +23,7 @@ public class CreateEventActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createevent);
 
-        Toast.makeText(CreateEventActivity.this, "in correct place!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(CreateEventActivity.this, "in correct place!", Toast.LENGTH_SHORT).show();
 
         title = findViewById(R.id.title);
         description = findViewById(R.id.description);

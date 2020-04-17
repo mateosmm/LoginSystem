@@ -102,7 +102,16 @@ public class MapActivity extends AppCompatActivity implements
             LatLng loc = new LatLng(e.lat, e.lng);
             Marker cur = createMarker(loc);
             cur.setTitle(e.title);
-            cur.setSnippet(e.description);
+            String snippet = Integer.toString(e.month);
+            snippet = snippet.concat("/");
+            snippet = snippet.concat(Integer.toString(e.day));
+            snippet = snippet.concat("/");
+            snippet = snippet.concat(Integer.toString(e.year));
+            snippet = snippet.concat(" ");
+            snippet = snippet.concat(Integer.toString(e.time));
+            snippet = snippet.concat(" ");
+            snippet = snippet.concat(e.description);
+            cur.setSnippet(snippet);
         }
         //All location access stuff.
         /*if (ContextCompat.checkSelfPermission( this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
@@ -211,6 +220,7 @@ public class MapActivity extends AppCompatActivity implements
     public boolean onMarkerClick(final Marker marker) {
 
         // Retrieve the data from the marker.
+
         Integer clickCount = (Integer) marker.getTag();
 
         // Check if a click count was set, then display the click count.
